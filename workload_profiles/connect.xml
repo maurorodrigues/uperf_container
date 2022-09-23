@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<profile name="connect">
+        <group nprocs="1">
+                <transaction iterations="1">
+                        <flowop type="connect" options="remotehost=$remotehost protocol=tcp"/>
+                </transaction>
+                <transaction iterations="1">
+                        <flowop type="disconnect"/>
+                </transaction>
+        </group>
+</profile>
+
